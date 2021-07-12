@@ -1,7 +1,7 @@
 # FocusIOS15 
 ## Super simple demo with minimal code in how to use @FocusState to optomize UI/UX for users. 
 
-<img width="1784" alt="Screen Shot 2021-07-12 at 1 17 19 PM" src="https://user-images.githubusercontent.com/34104180/125271927-eb824900-e313-11eb-947b-19857d0c09d0.png">
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/34104180/125285455-56874c00-e323-11eb-8504-43de6e70d3b7.gif)
 
 
 
@@ -106,3 +106,8 @@ struct ContentView_Previews: PreviewProvider {
 }
 
 ```
+
+
+<img width="1784" alt="Screen Shot 2021-07-12 at 1 17 19 PM" src="https://user-images.githubusercontent.com/34104180/125271927-eb824900-e313-11eb-947b-19857d0c09d0.png">
+
+
