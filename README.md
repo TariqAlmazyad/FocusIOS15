@@ -107,8 +107,5 @@ struct ContentView_Previews: PreviewProvider {
 ```
 
 
-![ezgif com-gif-maker](https://user-images.githubusercontent.com/34104180/125285455-56874c00-e323-11eb-8504-43de6e70d3b7.gif)
-
-
 
 
