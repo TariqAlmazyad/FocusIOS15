@@ -25,12 +25,15 @@ struct ContentView: View {
                     TextField("email",     text: $emailAddress)
                         .focused($focusState, equals: .emailAddress)
                         .submitLabel(.next)
+                    
                     TextField("full name", text: $fullName)
                         .focused($focusState, equals: .fullName)
                         .submitLabel(.next)
+                    
                     TextField("username",  text: $username)
                         .focused($focusState, equals: .username)
                         .submitLabel(.done)
+                    
                 }.textFieldStyle(.roundedBorder)
                     .padding()
                 Spacer()
@@ -52,8 +55,8 @@ struct ContentView: View {
                             }
                         } label: {
                             Image(systemName: "chevron.down")
-                                .foregroundColor(.blue)
-                        }
+                                .foregroundColor(focusState == .username ? .gray : .blue)
+                        }.disabled(focusState == .username)
                         // the reverse of the top
                         Button {
                             switch focusState {
@@ -69,8 +72,8 @@ struct ContentView: View {
                             
                         } label: {
                             Image(systemName: "chevron.up")
-                                .foregroundColor(.blue)
-                        }
+                                .foregroundColor(focusState == .emailAddress ? .gray : .blue)
+                        }.disabled(focusState == .emailAddress)
                         Spacer()
                         Button {
                             focusState = nil
